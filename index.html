@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        HTML DOM Video playbackRate Property
+    </title>
+</head>
+
+<body style="text-align:center;">
+
+    <video id="Test_Video" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" loop controls></video>
+
+    <br><br><br>
+    <button ondblclick="My_VideoRate()" type="button">
+        Return Playback Speed
+    </button><br>
+
+   
+
+    <button ondblclick="Set_VideoRate()" type="button">
+        Change Playback Speed
+    </button>
+
+    <script>
+        var v = document.getElementById("Test_Video");
+
+        function My_VideoRate() {
+            alert(v.playbackRate);
+        }
+
+        function Set_VideoRate() {
+            v.playbackRate = 2;
+        } 
+    </script>
+</body>
+
+</html>
